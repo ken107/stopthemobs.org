@@ -11,7 +11,7 @@ getSettings(["expireTime", location.hostname])
 
 
 function loadSettingsFromServer() {
-    return ajaxGet("https://stopthemobs.org/propaganda-remover.css")
+    return ajaxGet("https://propaganda-remover.lsdsoftware.com/propaganda-remover.css")
         .then(function(text) {
             var settings = {expireTime: Date.now() + 3600*1000};
             var tokens = text.split(/\n\/\*\s*(\S+?)\s*\*\//);
