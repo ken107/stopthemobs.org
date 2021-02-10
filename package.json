@@ -5,7 +5,7 @@
   "scripts": {
     "build-propaganda-remover": "cd propaganda-remover && zip -u -r ../propaganda-remover.zip * || true",
     "test-website": "hs website",
-    "deploy-website": "aws s3 sync --profile=s3 --delete --metadata-directive REPLACE --cache-control max-age=1800,public website s3://lsdsoftware-websites/stopthemobs.org"
+    "deploy-website": "aws s3 sync --delete --metadata-directive REPLACE --cache-control max-age=1800,public website s3://lsdsoftware-websites/stopthemobs.org"
   },
   "repository": {
     "type": "git",
