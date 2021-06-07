@@ -18,3 +18,14 @@
 .devsite-banner-message {
     display: none;
 }
+
+/* expressjs.com */
+header {
+    height: 58px;
+}
+#blm-banner {
+    display: none;
+}
+#logo .express {
+    margin: auto;
+}
